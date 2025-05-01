@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Star, User, Lock, Search, ChevronRight, Calendar, Building, Briefcase, Eye, XCircle, Check, LogOut, Home } from 'lucide-react';
 
-const MockupContainer = ({ children, title }) => (
+const MockupContainer = ({ children, title }: { children: React.ReactNode; title: string }) => (
   <div className="border rounded-lg p-6 mb-8 w-full max-w-3xl mx-auto bg-white shadow-sm">
     <h3 className="text-lg font-medium text-gray-800 mb-4">{title}</h3>
     {children}
@@ -421,7 +421,7 @@ const ReviewForm = () => {
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Please share your experience</label>
             <textarea 
-              rows="4" 
+              rows={4} 
               className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
               placeholder="What went well? What could have been better?"
               value="The interview questions were relevant, but there was a scheduling mix-up that caused delays. The assessment took significantly longer than indicated, which was frustrating given my current work schedule."

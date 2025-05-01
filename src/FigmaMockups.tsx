@@ -1,3 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
 import { useState } from 'react';
 import { Star, User, Lock, Search, ChevronRight, Calendar, Building, Briefcase, Eye, XCircle, Check, LogOut, Home } from 'lucide-react';
 
